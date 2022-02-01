@@ -25,10 +25,7 @@ function App() {
                         className="flex flex-col justify-between min-h-screen bg-base-100 "
                     >
                         <Navbar toggleTheme={toggleTheme} />
-                        <main
-                            className="container  mx-auto px-3 pb-12 "
-                            data-theme={theme}
-                        >
+                        <main className="container  mx-auto px-3 pb-12 ">
                             <Alert />
                             <Routes>
                                 <Route path="/" element={<Home />} />

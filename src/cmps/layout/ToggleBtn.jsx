@@ -3,7 +3,7 @@ import { BsSunFill } from 'react-icons/bs';
 import { useState } from 'react';
 
 function ToggleBtn({ toggleTheme }) {
-    const [checked, setChecked] = useState(true);
+    const [checked, setChecked] = useState(false);
     const handleChange = () => {
         toggleTheme();
         setChecked((prevState) => !prevState);
