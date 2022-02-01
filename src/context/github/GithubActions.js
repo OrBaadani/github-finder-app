@@ -13,9 +13,13 @@ export const searchUsers = async (text) => {
     const params = new URLSearchParams({
         q: text,
     });
-    const res = await githubAPI.get(`/search/users?${params}`);
-    console.log(res.data);
-    return res.data.items;
+    try {
+        const res = await githubAPI.get(`/search/users?${params}`);
+        console.log(res.data);
+        return res.data.items;
+    } catch (err) {
+        throw err;
+    }
 };
 
 export const getUserAndRepos = async (login) => {

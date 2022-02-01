@@ -19,7 +19,7 @@ function RepoPreview({ repo }) {
                         {name}
                     </a>
                 </h3>
-                <p className="mb-3">{description}</p>
+                <p className="mb-3 text-base-content">{description}</p>
                 <div>
                     <div className="mr-2 badge badge-info badge-lg">
                         <FaEye className="mr-2" />

@@ -69,7 +69,7 @@ function UserDetails() {
                                     </div>
                                 )}
                             </h1>
-                            <p>{bio}</p>
+                            <p className="text-base-content">{bio}</p>
                             <div className="mt-4 card-actions">
                                 <a
                                     className="btn btn-outline"
@@ -81,10 +81,10 @@ function UserDetails() {
                                 </a>
                             </div>
                         </div>
-                        <div className="w-full rounded-lg shadow-md bg-base-100 stats">
+                        <div className="w-full rounded-lg shadow-md bg-base-100 stats  ">
                             {location && (
                                 <div className="stat">
-                                    <div className="stat-title text-md">
+                                    <div className="stat-title text-md ">
                                         Location
                                     </div>
                                     <div className="text-lg stat-value">
@@ -127,7 +127,7 @@ function UserDetails() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full py-5 mb-6 rounded-lg shadow-md bg-base-100 stats">
+                <div className="w-full py-5 mb-6 rounded-lg shadow-md bg-base-100 stats   grid-rows-4 xs:grid-rows-2 sm:grid-rows-1">
                     <div className="stat">
                         <div className="stat-figure text-secondary">
                             <FaUsers className="text-3xl md:text-5xl" />
