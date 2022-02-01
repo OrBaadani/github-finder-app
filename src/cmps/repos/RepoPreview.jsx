@@ -13,7 +13,7 @@ function RepoPreview({ repo }) {
     return (
         <div className="mb-2 rounded-mb card bg-base-200  hover:bg-base-300">
             <div className="card-body">
-                <h3 className="mb-2 text-xl font-semibold">
+                <h3 className="mb-2 text-xl font-semibold text-base-content">
                     <a href={html_url}>
                         <FaLink className="inline mr-1" />
                         {name}

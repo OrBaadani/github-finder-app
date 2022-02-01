@@ -40,7 +40,7 @@ function UserDetails() {
         <>
             <div className="w-full mx-auto lg:w-10/12">
                 <div className="mb-4">
-                    <Link className="btn btn-ghost" to="/">
+                    <Link className="btn btn-ghost text-base-content" to="/">
                         Back To Search
                     </Link>
                 </div>
@@ -58,7 +58,7 @@ function UserDetails() {
                     </div>
                     <div className="col-span-2">
                         <div className="mb-6">
-                            <h1 className="text-3xl card-title">
+                            <h1 className="text-3xl text-base-content card-title">
                                 {name}
                                 <div className="ml-2 mr-1 badge badge-success">
                                     {type}

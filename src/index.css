@@ -6,6 +6,11 @@
     border-radius: 0.5rem;
     opacity: 0.45;
 }
-#checkbox:checked + .ball {
-    transform: translateX(24px);
+
+html {
+    height: 100%;
+    color: aqua;
 }
+/* #root {
+    height: 100%;
+} */

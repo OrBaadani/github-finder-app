@@ -10,7 +10,7 @@ import { AlertProvider } from './context/alert/AlertContext';
 import UserDetails from './pages/UserDetails';
 import { useState } from 'react';
 function App() {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('cupcake');
 
     const toggleTheme = () => {
         if (theme === 'dark') setTheme('cupcake');
@@ -22,10 +22,13 @@ function App() {
                 <Router>
                     <div
                         data-theme={theme}
-                        className="flex flex-col justify-between h-screen bg-base-100"
+                        className="flex flex-col justify-between min-h-screen bg-base-100 "
                     >
                         <Navbar toggleTheme={toggleTheme} />
-                        <main className="container  mx-auto px-3 pb-12">
+                        <main
+                            className="container  mx-auto px-3 pb-12 "
+                            data-theme={theme}
+                        >
                             <Alert />
                             <Routes>
                                 <Route path="/" element={<Home />} />

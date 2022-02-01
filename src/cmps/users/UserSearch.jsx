@@ -50,7 +50,7 @@ function UserSearch() {
                 <div>
                     <button
                         onClick={handleClear}
-                        className="btn btn-ghost btn-lg"
+                        className="btn btn-ghost btn-lg text-base-content"
                     >
                         Clear
                     </button>
